@@ -3,11 +3,11 @@
         @csrf
 
         <!-- Name -->
-        <div>
+        <!-- <div>
             <x-input-label for="name" :value="__('Name')" />
             <x-text-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name')" required autofocus autocomplete="name" />
             <x-input-error :messages="$errors->get('name')" class="mt-2" />
-        </div>
+        </div> -->
 
         <!-- Email Address -->
         <div class="mt-4">
@@ -24,8 +24,12 @@
                             type="password"
                             name="password"
                             required autocomplete="new-password" />
-
+                            <div class='form-text mt-2'>
+        &#10004; Пароль має містити не менше 8 символів
+    </div>
             <x-input-error :messages="$errors->get('password')" class="mt-2" />
+        
+        
         </div>
 
         <!-- Confirm Password -->
@@ -35,7 +39,7 @@
             <x-text-input id="password_confirmation" class="block mt-1 w-full"
                             type="password"
                             name="password_confirmation" required autocomplete="new-password" />
-
+                            
             <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
         </div>
 
