@@ -42,11 +42,7 @@
                             data-bs-target = "#mod_about">
                             <i class="bi bi-info-circle ps-1 pe-2"></i>About
                     </buttom>
-                </li>
-                  
-
-
-                
+                </li>               
 
                 <li><hr class="dropdown-divider"></li>
                 
@@ -58,28 +54,56 @@
                             <x-dropdown-link :href="route('logout')"
                                     onclick="event.preventDefault();
                                                 this.closest('form').submit();"
-                                                class="text-decoration-none text-black ps-3">
-                                                
+                                                class="text-decoration-none text-black ps-3">       
                                <i class="bi bi-door-open pe-1"></i>
                                Sign out
                             </x-dropdown-link>
                         </form>        
-                </li>
-        
-        
-        
+                </li>       
         </ul>
     </div>
 </div>
 
-<hr>
+<!-- <hr> -->
 
-<div class="container mt-5 px-4">
-<div class="row 1d-flex 1justify-content-center 1mt-5 1bb py-3 mx-auto"
-  style="max-width: 500px;">
+<div class="container d-flex align-items-center justify-content-center" style="height: 70vh;">
 
+<div class="1bb text-center col-md-7">
+     
+<div class="mb-3 1bb">
+    <input type="email" class="form-control text-center fs-4" id="exampleInputEmail1" aria-describedby="emailHelp"
+    placeholder="">
+    <div id="emailHelp" class="form-text text-center">Введите код контроллера, например: 23</div>
+  </div>
+
+
+  <button type="button"
+          class="btn btn-dark col-5 col-md-3 mt-4"
+          data-bs-toggle="modal"
+          data-bs-target="#mod_scod_show"
+          >Пошук</button>
 
 </div>
+
+</div>
+
+
+
+
+<!-- <div class="container mt-5 px-4">
+<div class="row 1d-flex 1justify-content-center 1mt-5 1bb py-3 mx-auto"
+  style="max-width: 500px;"> -->
+
+
+
+
+
+
+
+
+
+
+<!-- </div> -->
 
 <!-- footer -->
 <div class="mx-auto fixed-bottom pb-3" style="max-width: 1000px">
@@ -93,3 +117,6 @@
 <script type="text/javascript">
 
 </script>
+
+
+@include('scod.mod.mod_scod_show')

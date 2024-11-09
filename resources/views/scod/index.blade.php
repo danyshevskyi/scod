@@ -36,6 +36,10 @@
             width: 110px;
         }
 
+        .bb {
+            border: 1px solid blue;
+        }
+
     </style>
 </head>
 <body>
