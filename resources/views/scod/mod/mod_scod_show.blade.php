@@ -32,7 +32,7 @@
 <div id="key_name" hidden></div>
     <div class="container 1px-2 1pt-3 1bb">
 
-    <div class="mt-3" style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aperiam, voluptates sed repellendus soluta esse perspiciatis architecto ea dolores ipsum illo nam. Facilis adipisci nemo reiciendis nobis, rerum exercitationem nulla.</div>
+    <div class="mt-3 px-3"style="text-align: justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro aperiam, voluptates sed repellendus soluta esse perspiciatis architecto ea dolores ipsum illo nam. Facilis adipisci nemo reiciendis nobis, rerum exercitationem nulla.</div>
 
 
 
